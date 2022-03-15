@@ -1,0 +1,9 @@
+version: 2
+updates:
+  # Enable version updates for Docker
+  - package-ecosystem: "yarn"
+    # Look for npm packages in the `root` directory
+    directory: "/"
+    # Check for updates every weekday
+    schedule:
+      interval: "daily" 
