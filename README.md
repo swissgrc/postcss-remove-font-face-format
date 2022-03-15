@@ -1,4 +1,4 @@
-# postcss-remove-font-face
+# postcss-remove-font-face-format
 
 [PostCSS] plugin to remove font faces by format.
 
@@ -30,7 +30,7 @@
 **Step 1:** Install plugin:
 
 ```sh
-npm install --save-dev postcss postcss-remove-font-face
+npm install --save-dev postcss postcss-remove-font-face-format
 ```
 
 **Step 2:** Check you project for existed PostCSS config: `postcss.config.js`
@@ -45,7 +45,7 @@ and set this plugin in settings.
 ```diff
 module.exports = {
   plugins: [
-+   require('postcss-remove-font-face'),
++   require('postcss-remove-font-face-format'),
     require('autoprefixer')
   ]
 }

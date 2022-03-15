@@ -7,7 +7,7 @@ module.exports = (opts = {}) => {
   const { format } = Object(opts);
 
   return {
-    postcssPlugin: 'postcss-remove-font-face',
+    postcssPlugin: 'postcss-remove-font-face-format',
     AtRule: {
       "font-face"(rule) {
         rule.walkDecls("src", (node) => {
