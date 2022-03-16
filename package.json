@@ -1,19 +1,19 @@
 {
-  "name": "postcss-remove-font-face",
+  "name": "postcss-remove-font-face-format",
   "version": "0.0.0",
   "description": "PostCSS plugin to remove font faces by format",
   "keywords": [
     "postcss",
     "css",
     "postcss-plugin",
-    "postcss-remove-font-face"
+    "postcss-remove-font-face-format"
   ],
   "scripts": {
     "test": "jest --coverage && eslint ."
   },
   "author": "Swiss GRC AG <opensource@swissgrc.com>",
   "license": "MIT",
-  "repository": "swissgrc/postcss-remove-font-face",
+  "repository": "swissgrc/postcss-remove-font-face-format",
   "engines": {
     "node": ">=12.0.0"
   },
