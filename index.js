@@ -31,7 +31,7 @@ module.exports = (opts = {}) => {
               }            
   
               value.nodes.forEach((child) => {
-                // Check if format which should be removed
+                // Check if format should be removed
                 if (child.type == "string" && child.value == format)
                 {
                   remove = true;
