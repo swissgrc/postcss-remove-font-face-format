@@ -9,7 +9,10 @@
     "postcss-remove-font-face-format"
   ],
   "scripts": {
-    "test": "jest --coverage && eslint ."
+    "test": "jest --coverage && eslint .",
+    "prepack": "clean-package",
+    "new:pack": "yarn pack && clean-package restore",
+    "new:publish": "yarn publish && clean-package restore"
   },
   "author": "Swiss GRC AG <opensource@swissgrc.com>",
   "license": "MIT",
@@ -21,7 +24,7 @@
     "postcss": "^8.3.0"
   },
   "devDependencies": {
-    "clean-publish": "^3.4.2",
+    "clean-package": "^2.1.1",
     "eslint": "^8.12.0",
     "eslint-plugin-jest": "^26.1.3",
     "jest": "^27.3.1",
@@ -49,6 +52,16 @@
         "statements": 100
       }
     }
+  },
+  "clean-package": {
+    "indent": 2,
+    "remove": [
+      "scripts",
+      "devDependencies",
+      "eslintConfig",
+      "jest",
+      "clean-package"
+    ]
   },
   "dependencies": {
     "postcss-value-parser": "^4.2.0"
