@@ -6,7 +6,7 @@ env:
   FORCE_COLOR: 2
 jobs:
   full:
-    name: Node.js 16 Full
+    name: Node.js 18 Full
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the repository
@@ -24,6 +24,7 @@ jobs:
     strategy:
       matrix:
         node-version:
+          - 16
           - 14
           - 12
     name: Node.js ${{ matrix.node-version }} Quick
