@@ -1,4 +1,4 @@
-var valueParser = require('postcss-value-parser');
+const valueParser = require('postcss-value-parser');
 
 /**
  * @type {import('postcss').PluginCreator}
@@ -17,12 +17,12 @@ module.exports = (opts = {}) => {
           }
 
           // Split individual font-face sources
-          var sources = node.value.split(",");
+          const sources = node.value.split(",");
           // Filter to sources we want to keep
-          var filteredSources = sources.filter(source => {
+          const filteredSources = sources.filter(source => {
             const values = valueParser(source);
 
-            var remove = false;
+            let remove = false;
             values.walk((value) => {
               // We are only interested in the format value
               if (value.type !== "function" || value.value !== "format") 
