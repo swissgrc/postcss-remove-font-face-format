@@ -18,10 +18,10 @@
   "license": "MIT",
   "repository": "swissgrc/postcss-remove-font-face-format",
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=18.0.0"
   },
   "peerDependencies": {
-    "postcss": "^8.3.0"
+    "postcss": "^8.4.0"
   },
   "devDependencies": {
     "clean-package": "^2.1.1",
