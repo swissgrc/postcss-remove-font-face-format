@@ -1,6 +1,3 @@
-const js = require("@eslint/js");
-const jest = require('eslint-plugin-jest');
-
 module.exports = [
     {
         languageOptions: {
@@ -10,8 +7,8 @@ module.exports = [
                 "es6": true,
             }
         },
-        ...jest.configs['flat/recommended'],
-        ...js.configs.recommended,
+        ...require('eslint-plugin-jest').configs['flat/recommended'],
+        ...require("@eslint/js").configs.recommended,
         "rules": {
             "jest/expect-expect": "off"
         }
