@@ -10,7 +10,7 @@ jobs:
       # Setup .npmrc file to publish to npm
       - uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e # v4
         with:
-          node-version: '18.x'
+          node-version: '22.x'
           registry-url: 'https://registry.npmjs.org'
       - run: yarn install --frozen-lockfile
       - run: yarn version --new-version ${{ github.event.release.tag_name }} --no-git-tag-version
