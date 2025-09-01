@@ -18,7 +18,7 @@
   "license": "MIT",
   "repository": "swissgrc/postcss-remove-font-face-format",
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=20.0.0"
   },
   "peerDependencies": {
     "postcss": "8.5.4"
