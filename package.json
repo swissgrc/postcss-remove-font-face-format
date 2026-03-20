@@ -8,6 +8,12 @@
     "postcss-plugin",
     "postcss-remove-font-face-format"
   ],
+  "scripts": {
+    "test": "jest --coverage && eslint .",
+    "prepack": "clean-package",
+    "new:pack": "npm pack && clean-package restore",
+    "new:publish": "npm publish && clean-package restore"
+  },
   "author": "Swiss GRC AG <opensource@swissgrc.com>",
   "license": "MIT",
   "repository": "swissgrc/postcss-remove-font-face-format",
@@ -16,6 +22,30 @@
   },
   "peerDependencies": {
     "postcss": "8.5.8"
+  },
+  "devDependencies": {
+    "clean-package": "2.2.0",
+    "eslint": "9.39.4",
+    "eslint-plugin-jest": "29.15.0",
+    "jest": "30.3.0",
+    "postcss": "8.5.8"
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "statements": 100
+      }
+    }
+  },
+  "clean-package": {
+    "indent": 2,
+    "remove": [
+      "scripts",
+      "devDependencies",
+      "eslintConfig",
+      "jest",
+      "clean-package"
+    ]
   },
   "dependencies": {
     "postcss-value-parser": "4.2.0"
