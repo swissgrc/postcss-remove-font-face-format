@@ -27,7 +27,7 @@
     "clean-package": "2.2.0",
     "eslint": "9.39.4",
     "eslint-plugin-jest": "29.15.0",
-    "jest": "30.3.0",
+    "jest": "30.4.2",
     "postcss": "8.5.8"
   },
   "jest": {
