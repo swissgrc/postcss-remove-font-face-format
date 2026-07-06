@@ -21,14 +21,14 @@
     "node": ">=20.0.0"
   },
   "peerDependencies": {
-    "postcss": "8.5.10"
+    "postcss": "8.5.16"
   },
   "devDependencies": {
     "clean-package": "2.2.0",
     "eslint": "9.39.4",
     "eslint-plugin-jest": "29.15.4",
     "jest": "30.4.2",
-    "postcss": "8.5.10"
+    "postcss": "8.5.16"
   },
   "jest": {
     "coverageThreshold": {
