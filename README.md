@@ -1,5 +1,10 @@
 # postcss-remove-font-face-format
 
+> **Archived**
+>
+> This project is no longer actively maintained and this repository has been archived.
+> No further updates, bug fixes, or support are planned.
+
 [PostCSS] plugin to remove font faces by format.
 
 [PostCSS]: https://github.com/postcss/postcss
